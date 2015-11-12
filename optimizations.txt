@@ -3,7 +3,6 @@
 -fcprop-registers
 -fdce
 -fdefer-pop
--fdelayed-branch
 -fdse
 -fguess-branch-probability
 -fif-conversion2
