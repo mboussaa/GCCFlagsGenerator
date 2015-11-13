@@ -174,11 +174,13 @@ public class Algorithm {
         while(line!= null) {
         	//System.out.println(line);
         	//System.out.println(line.substring(0,2)+"no-"+line.substring(2));
+    		
             passes.add(line);
             no_passes.add(line.substring(0,2)+"no-"+line.substring(2));
             line = br.readLine();
         }   
-        br.close();  
+        br.close();
+
         //System.out.println(passes.size());
 	}
 	public static void writePopToFile(Population pop) throws Exception {
@@ -187,6 +189,7 @@ public class Algorithm {
 			  String opti="";
 				for (int j = 0; j < pop.getIndividual(i).getGenes().length; j++) {
 					if (pop.getIndividual(i).getGenes()[j]==1) {
+						
 						opti+=passes.get(j)+" ";
 						
 					}else{

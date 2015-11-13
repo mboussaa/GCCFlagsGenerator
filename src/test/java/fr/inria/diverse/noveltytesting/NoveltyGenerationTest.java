@@ -1,11 +1,9 @@
 package fr.inria.diverse.noveltytesting;
 
 import java.io.BufferedWriter;
- 
 import java.io.FileWriter;
- 
 import java.io.PrintWriter;
- 
+
 import org.junit.Test;
 
 import NS.*;
@@ -41,6 +39,7 @@ public class NoveltyGenerationTest {
 		PrintWriter pw = new PrintWriter ( bw ) ; 
 		pw.close( ) ; 
 		Algorithm.setPasses();
+
         while (generationCount!=nbGenerations) {
         	generationCount++;
         	//Algorithm.writePopToFile(myPop);

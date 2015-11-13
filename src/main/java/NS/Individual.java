@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Individual {
 	static int k = 15; 
-    static int defaultGeneLength = 76;
+    static int defaultGeneLength = 75;
     
     
     private final byte[] genes = new byte[defaultGeneLength];
