@@ -7,7 +7,7 @@ import java.util.List;
 
 
 public class Individual {
-	static int k = 5; 
+	static int k = 15; 
     static int defaultGeneLength = 75;
     
     
