@@ -186,7 +186,7 @@ public class Algorithm {
 	public static void writePopToFile(Population pop) throws Exception {
     
 		  for (int i = 0; i < pop.size(); i++) {
-			  String opti="-O1 ";
+			  String opti="-O3 ";
 				for (int j = 0; j < pop.getIndividual(i).getGenes().length; j++) {
 					if (pop.getIndividual(i).getGenes()[j]==1) {
 						
