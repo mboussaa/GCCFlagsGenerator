@@ -27,7 +27,7 @@ public class NoveltyGenerationTest {
 	@Test
 	public void testTestClass() throws Exception {
 		final int popSize=100;
-    	final int nbGenerations=3;
+    	final int nbGenerations=100;
         
     	// Create an initial population
         Population myPop = new Population(popSize, true);
