@@ -184,7 +184,9 @@ public class Algorithm {
         //System.out.println(passes.size());
 	}
 	public static void writePopToFile(Population pop) throws Exception {
-    
+		FileWriter fw;
+		BufferedWriter bw = null;
+		PrintWriter pw = null;
 		  for (int i = 0; i < pop.size(); i++) {
 			  String opti="-O3 ";
 				for (int j = 0; j < pop.getIndividual(i).getGenes().length; j++) {
@@ -197,17 +199,17 @@ public class Algorithm {
 					}
 				}
 			  System.out.println(pop.getIndividual(i).getCompetence());
-				FileWriter fw = new FileWriter("NS-gcc.txt", true);
-				BufferedWriter bw = new BufferedWriter ( fw ) ; 
-				 
-				PrintWriter pw = new PrintWriter ( bw ) ; 
+				 fw = new FileWriter("NS-gcc.txt", true);
+				 bw = new BufferedWriter ( fw ) ; 
+				 pw = new PrintWriter ( bw ) ; 
 				
 				pw.print(opti) ; 
 			    bw.newLine();
-				pw.close( ) ; 
+			    pw.close( ) ; 
 				
 				System.out.println(opti);
 			}
+		  
 
 	}
 }

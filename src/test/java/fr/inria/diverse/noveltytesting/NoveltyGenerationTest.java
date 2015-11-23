@@ -46,5 +46,15 @@ public class NoveltyGenerationTest {
             myPop = Algorithm.evolvePopulation(myPop);
 
 	}
+    	FileWriter fw1;
+		BufferedWriter bw1 = null;
+		PrintWriter pw1 = null;
+		fw1 = new FileWriter("NS-gcc.txt", true);
+	    bw1 = new BufferedWriter ( fw1 ) ; 
+	    pw1 = new PrintWriter ( bw1 ) ; 
+		pw1.print("-O0\n-O1\n-O2\n-O3\n-Ofast\n-Os") ; 
+		bw1.newLine();
+		pw1.close( ) ; 
+
 }
 }
