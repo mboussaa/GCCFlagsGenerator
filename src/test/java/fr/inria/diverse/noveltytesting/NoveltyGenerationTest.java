@@ -52,7 +52,7 @@ public class NoveltyGenerationTest {
 		fw1 = new FileWriter("NS-gcc.txt", true);
 	    bw1 = new BufferedWriter ( fw1 ) ; 
 	    pw1 = new PrintWriter ( bw1 ) ; 
-		pw1.print("-O0\n-O1\n-O2\n-O3\n-Ofast\n-Os") ; 
+		pw1.print("-O0\n-O1\n-O2\n-O3\n-Ofast\n-Os\n-Os") ; 
 		bw1.newLine();
 		pw1.close( ) ; 
 
